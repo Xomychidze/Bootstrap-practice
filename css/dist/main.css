@@ -1,3 +1,90 @@
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Italic";
+  src: url("../fonts/Gilroy-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy SemiBold";
+  src: url("../fonts/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  /* semi-bold */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zing Rust Demo";
+  src: url("../fonts/ZingRustDemo-Base.otf") format("truetype");
+  font-weight: 400;
+  /* regular */
+  font-style: italic;
+}
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: aliceblue;
+  font-family: "Gilroy Regular", sans-serif;
+  font-size: 22px;
+  background-color: #403C3B;
+  color: white;
+}
+
+.header {
+  margin-top: 38px;
+}
+.header .nav {
+  text-align: center;
+  border-radius: 10px;
+}
+.header .nav form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+.header .nav form input, .header .nav form button {
+  outline: none;
+  background: transparent;
+}
+.header .nav form input {
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+  border: 3px solid #F9F0DA;
+}
+.header .nav form input:focus {
+  border-color: #311c24;
+}
+.header .nav form button {
+  border: none;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.header .nav form button .magnifier {
+  width: 38px;
+  position: relative;
+  left: -4px;
+}
+.header .logo {
+  font-family: "Gilroy Bold", sans-serif;
+  font-size: 27px;
+  line-height: 25px;
+  font-weight: 700;
+  height: 25px;
+  text-align: left;
 }
