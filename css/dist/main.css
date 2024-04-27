@@ -38,11 +38,27 @@ body {
   font-family: "Gilroy Regular", sans-serif;
   font-size: 22px;
   background-color: #403C3B;
-  color: white;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .header {
   margin-top: 38px;
+}
+.header .logo {
+  font-family: "Gilroy Bold", sans-serif;
+  font-size: 27px;
+  line-height: 25px;
+  font-weight: 700;
+  height: 25px;
+  text-align: left;
+  position: relative;
+  top: 7.5px;
 }
 .header .nav {
   text-align: center;
@@ -58,33 +74,112 @@ body {
   background: transparent;
 }
 .header .nav form input {
-  width: 100%;
+  width: 380px;
+  position: relative;
   height: 42px;
   padding-left: 15px;
-  border: 3px solid #F9F0DA;
+  left: -2.5em;
+  border: none;
+  border-radius: 10px;
+  background-color: #504b4a;
+  color: #ffffff;
 }
 .header .nav form input:focus {
-  border-color: #311c24;
+  border-color: #504b4a;
 }
 .header .nav form button {
+  background-color: #504b4a;
+  width: 20px;
   border: none;
+  border-radius: 10px;
   height: 42px;
   width: 42px;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -2.2em;
   cursor: pointer;
 }
 .header .nav form button .magnifier {
-  width: 38px;
+  width: 25px;
   position: relative;
-  left: -4px;
+  top: -2px;
 }
-.header .logo {
-  font-family: "Gilroy Bold", sans-serif;
-  font-size: 27px;
-  line-height: 25px;
-  font-weight: 700;
-  height: 25px;
+.header .contact .row-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.header .contact .row-1 .phone-block {
+  background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+  width: 32px;
+  border-radius: 50%;
+  margin: 8px 20px 0px 0px;
+  position: relative;
+  top: -5px;
+}
+.header .contact .row-1 .phone-block .phone-img {
+  position: relative;
+  top: -1.5px;
+  left: -1px;
+}
+.header .contact .row-1 .us-contact .title-contact {
+  font-family: "Gilroy Regular", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
   text-align: left;
+}
+.header .contact .row-1 .us-contact .number-contact {
+  font-family: "Gilroy Bold", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.header .bucket-block {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.header .bucket-block .bucket-header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+  width: 149px;
+  height: 52px;
+  border-radius: 10px;
+}
+.header .bucket-block .bucket-header .bucket-text {
+  font-family: "Gilroy SemiBold", sans-serif;
+  font-weight: 600;
+  line-height: 17px;
+  font-size: 17px;
+  margin: 17px 0 0 0;
+  display: inline;
+}
+.header .bucket-block .bucket-header .bucket-text::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 30px;
+  margin-left: 15px;
+  transform: rotate(90deg);
+  right: 6.5em;
+  top: 3.6em;
+}
+.header .bucket-block .bucket-number {
+  font-family: "Gilroy SemiBold", sans-serif;
+  font-weight: 600;
+  line-height: 14px;
+  font-size: 17px;
+  color: black;
+  position: relative;
+  top: 14px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

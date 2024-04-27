@@ -47,7 +47,8 @@ $logo: 'Zing Rust Demo', sans-serif ;
 $size-dish: 22px;
 $bg-color: #403C3B ;
 $line25: 25px ;
-
+$txt-color: #ffffff ;
+$bg-gradient: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%) ;
 
 // MAIN STYLE
 
@@ -57,12 +58,27 @@ body {
     font-family: $main-text;
     font-size: $size-dish;
     background-color: $bg-color;
-    color: white;
+    color: $txt-color;
+}
+
+a {
+  text-decoration: none;
+  color: $txt-color;
+  text-decoration: none;
 }
 
 
 .header {
-
+  
+  .logo {
+    font-family: $header-text;
+    font-size: 27px;
+    line-height: $line25 ;
+    font-weight: 700;
+    height: 25px; 
+    text-align: left;
+    position: relative;
+    top: 7.5px;}
     margin-top: 38px;
 
     .nav {
@@ -84,52 +100,152 @@ body {
           outline: none;
             background: transparent;
           }
+
           input {
-            width: 100%;
+            width: 380px;
+            position: relative;
             height: 42px;
             padding-left: 15px;
-            border: 3px solid #F9F0DA;
+            left: -2.5em;
+            border: none;
+            border-radius: 10px;
+            background-color: #504b4a;
+            color: $txt-color;
 
             &:focus {
-              border-color: #311c24;
+              border-color: rgba(80, 75, 74, 1);
             }}
 
 
           button {
+            background-color: #504b4a;
+            width: 20px;
             border: none;
+            border-radius: 10px;
             height: 42px;
             width: 42px;
             position: absolute;
             top: 0;
-            right: 0;
+            right: -2.2em;
             cursor: pointer;
           
           
             
               .magnifier {
-                width: 38px;
+                width: 25px;
                 position: relative;
-                left: -4px;}
+                top: -2px;
+              }
 
     
           }}
     }
     
+        .contact {
+          .row-1 {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .phone-block {
+              background: $bg-gradient ;
+              width: 32px;
+              border-radius: 50%;
+              margin: 8px 20px 0px 0px;
+              position: relative;
+              top: -5px;
 
 
+              .phone-img {
+                position: relative;
+                top: -1.5px;
+                left: -1px;
+              }
+              
+            }
+            .us-contact {
+            
 
+            
+
+                .title-contact {
+                  font-family: $main-text;
+                  font-weight: 400;
+                  font-size: 12px;
+                  line-height: 20px;
+                  text-align: left;
+                }
+                .number-contact {
+                  font-family: $header-text;
+                  font-weight: 700;
+                  font-size: 16px;
+                  line-height: 20px;
+                }
+            }
+          }
+        }
 
         // .searcher {
         // width: 400px; }
+      .bucket-block {   
+        display: flex;
+        flex-direction: row-reverse;
+        .bucket-header {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          background: $bg-gradient ;
+          width: 149px;
+          height: 52px;
+          border-radius: 10px;
+           
+            .bucket-text {
+              font-family: $cell-text;
+              font-weight: 600;
+              line-height: 17px;
+              font-size: 17px;
+              margin: 17px 0 0 0;
+              display: inline;
 
-        .logo {
-        font-family: $header-text;
-        font-size: 27px;
-        line-height: $line25 ;
-        font-weight: 700;
-        height: 25px; 
-        text-align: left;}
-}
+              &::after {
+                position: absolute;
+                content: "";
+                height: 2px;
+                background-color:rgba(255, 255, 255, 0.3);
+                width: 30px;
+                margin-left: 15px;
+                transform: rotate(90deg);
+                right: 6.5em;
+                top: 3.6em;
+              }
+        
+                
+            }
+          }
+
+            .bucket-number {
+              font-family: $cell-text;
+              font-weight: 600;
+              line-height: 14px;
+              font-size: 17px;
+              color: black;
+              position: relative;
+              top: 14px;
+              background-color: $txt-color;
+              border-radius: 50%;
+              height: 24px;
+              width: 24px;
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }   
+          
+        }
+      }
+
+
 
 
 
