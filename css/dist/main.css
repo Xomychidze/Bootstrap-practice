@@ -47,10 +47,20 @@ a {
   text-decoration: none;
 }
 
-.header {
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+
+hr {
+  width: 1400px;
+}
+
+.header .nav-bar {
+  margin-bottom: 25px;
   margin-top: 38px;
 }
-.header .logo {
+.header .nav-bar .logo {
   font-family: "Gilroy Bold", sans-serif;
   font-size: 27px;
   line-height: 25px;
@@ -58,22 +68,23 @@ a {
   height: 25px;
   text-align: left;
   position: relative;
+  cursor: pointer;
   top: 7.5px;
 }
-.header .nav {
+.header .nav-bar .nav {
   text-align: center;
   border-radius: 10px;
 }
-.header .nav form {
+.header .nav-bar .nav form {
   position: relative;
   width: 300px;
   margin: 0 auto;
 }
-.header .nav form input, .header .nav form button {
+.header .nav-bar .nav form input, .header .nav-bar .nav form button {
   outline: none;
   background: transparent;
 }
-.header .nav form input {
+.header .nav-bar .nav form input {
   width: 380px;
   position: relative;
   height: 42px;
@@ -84,10 +95,10 @@ a {
   background-color: #504b4a;
   color: #ffffff;
 }
-.header .nav form input:focus {
+.header .nav-bar .nav form input:focus {
   border-color: #504b4a;
 }
-.header .nav form button {
+.header .nav-bar .nav form button {
   background-color: #504b4a;
   width: 20px;
   border: none;
@@ -99,17 +110,17 @@ a {
   right: -2.2em;
   cursor: pointer;
 }
-.header .nav form button .magnifier {
+.header .nav-bar .nav form button .magnifier {
   width: 25px;
   position: relative;
   top: -2px;
 }
-.header .contact .row-1 {
+.header .nav-bar .contact .row-1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.header .contact .row-1 .phone-block {
+.header .nav-bar .contact .row-1 .phone-block {
   background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
   width: 32px;
   border-radius: 50%;
@@ -117,29 +128,29 @@ a {
   position: relative;
   top: -5px;
 }
-.header .contact .row-1 .phone-block .phone-img {
+.header .nav-bar .contact .row-1 .phone-block .phone-img {
   position: relative;
   top: -1.5px;
   left: -1px;
 }
-.header .contact .row-1 .us-contact .title-contact {
+.header .nav-bar .contact .row-1 .us-contact .title-contact {
   font-family: "Gilroy Regular", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
   text-align: left;
 }
-.header .contact .row-1 .us-contact .number-contact {
+.header .nav-bar .contact .row-1 .us-contact .number-contact {
   font-family: "Gilroy Bold", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
 }
-.header .bucket-block {
+.header .nav-bar .bucket-block {
   display: flex;
   flex-direction: row-reverse;
 }
-.header .bucket-block .bucket-header {
+.header .nav-bar .bucket-block .bucket-header {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -148,7 +159,7 @@ a {
   height: 52px;
   border-radius: 10px;
 }
-.header .bucket-block .bucket-header .bucket-text {
+.header .nav-bar .bucket-block .bucket-header .bucket-text {
   font-family: "Gilroy SemiBold", sans-serif;
   font-weight: 600;
   line-height: 17px;
@@ -156,7 +167,7 @@ a {
   margin: 17px 0 0 0;
   display: inline;
 }
-.header .bucket-block .bucket-header .bucket-text::after {
+.header .nav-bar .bucket-block .bucket-header .bucket-text::after {
   position: absolute;
   content: "";
   height: 2px;
@@ -167,7 +178,7 @@ a {
   right: 6.5em;
   top: 3.6em;
 }
-.header .bucket-block .bucket-number {
+.header .nav-bar .bucket-block .bucket-number {
   font-family: "Gilroy SemiBold", sans-serif;
   font-weight: 600;
   line-height: 14px;
@@ -182,4 +193,45 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header-menu {
+  background-color: #44403F;
+  width: 1440px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FFFFFF1A;
+}
+.header-menu .menu-list {
+  font-weight: 400;
+  font-size: 18px;
+  color: #d1b7b7;
+  display: flex;
+}
+.header-menu .menu-list .menu-title {
+  font-family: "Gilroy Regular", sans-serif;
+  list-style: none;
+  margin: 0 20px;
+  position: relative;
+  top: 7px;
+  line-height: 20.88px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.header-menu .menu-list .menu-title .line {
+  width: 100%;
+  position: relative;
+  opacity: 0;
+  top: 20px;
+  height: 2px;
+  background: #618967;
+  transition: opacity 0.3s ease;
+}
+.header-menu .menu-list .menu-title:active {
+  color: #ffffff;
+}
+.header-menu .menu-list .menu-title:active .line {
+  opacity: 1;
 }

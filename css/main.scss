@@ -67,9 +67,19 @@ a {
   text-decoration: none;
 }
 
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+hr {
+  width: 1400px;
+}
 
 .header {
+  .nav-bar {
   
+    margin-bottom: 25px;
+
   .logo {
     font-family: $header-text;
     font-size: 27px;
@@ -78,12 +88,14 @@ a {
     height: 25px; 
     text-align: left;
     position: relative;
-    top: 7.5px;}
-    margin-top: 38px;
+    cursor: pointer;
+    top: 7.5px;
+  }
 
+    margin-top: 38px;
     .nav {
 
-
+      
       text-align: center;
       border-radius: 10px;
       
@@ -114,7 +126,8 @@ a {
 
             &:focus {
               border-color: rgba(80, 75, 74, 1);
-            }}
+            }
+          }
 
 
           button {
@@ -246,9 +259,62 @@ a {
       }
 
 
+    }
+    
+    .header-menu {
+      background-color: #44403F;
+      width: 1440px;
+      height: 75px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #FFFFFF1A;
+      .menu-list {
 
+        font-weight: 400;
+        font-size: 18px;
 
+        color: #d1b7b7;
+        display: flex;
+        .menu-title {
+          font-family: $main-text;
+          list-style: none;
+          margin: 0 20px;
+          position: relative;
+          top: 7px;
+          line-height:20.88px ;
+          transition: color 0.3s ease;
+          cursor: pointer;
+          .line {
+            width: 100%;
+            position: relative;
+            opacity: 0;
+            top: 20px;
+            height: 2px;
+            background: #618967;
+            transition: opacity 0.3s ease;
+          }
+          &:active {
+            .line {
+              opacity: 1;
+            }
 
+            color: #ffffff;
+          }
+        }
+      
+
+      }
+    }
+    
+   
+      //.header-banner {
+        
+
+        // .art-img {
+        //   border-color: #504b4a ;
+        //   border: 20px;
+        // }  }
 
 
 
