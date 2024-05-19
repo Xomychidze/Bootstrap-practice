@@ -50,6 +50,7 @@ a {
 dl, ol, ul {
   margin-top: 0;
   margin-bottom: 0rem;
+  padding-left: 0;
 }
 
 hr {
@@ -194,33 +195,36 @@ hr {
   justify-content: center;
   align-items: center;
 }
+.header .header-banner .art-img {
+  width: 1425px;
+}
 
-.header-menu {
+.menu .header-menu {
   background-color: #44403F;
-  width: 1440px;
+  width: 1425px;
   height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #FFFFFF1A;
 }
-.header-menu .menu-list {
+.menu .header-menu .menu-list {
   font-weight: 400;
   font-size: 18px;
   color: #d1b7b7;
   display: flex;
 }
-.header-menu .menu-list .menu-title {
+.menu .header-menu .menu-list .menu-title {
   font-family: "Gilroy Regular", sans-serif;
   list-style: none;
-  margin: 0 20px;
+  margin: 0 25px;
   position: relative;
   top: 7px;
   line-height: 20.88px;
   transition: color 0.3s ease;
   cursor: pointer;
 }
-.header-menu .menu-list .menu-title .line {
+.menu .header-menu .menu-list .menu-title .line {
   width: 100%;
   position: relative;
   opacity: 0;
@@ -229,9 +233,129 @@ hr {
   background: #618967;
   transition: opacity 0.3s ease;
 }
-.header-menu .menu-list .menu-title:active {
+.menu .header-menu .menu-list .menu-title:active {
+  font-weight: 500;
   color: #ffffff;
 }
-.header-menu .menu-list .menu-title:active .line {
+.menu .header-menu .menu-list .menu-title:active .line {
   opacity: 1;
+}
+.menu .block-menu {
+  width: 1258px;
+  position: relative;
+  left: 2em;
+}
+.menu .block-menu .block-title {
+  margin: 51px 0 50px 114px;
+}
+.menu .block-menu .block-title .title-text {
+  font-family: "Gilroy SemiBold", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38.69px;
+  text-align: left;
+  width: 11em;
+}
+.menu .block-menu .block-title .line-title {
+  width: 33px;
+  height: 4px;
+  transform: rotate(90deg);
+  background: #618967;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+.menu .block-menu .block-item {
+  margin: 0 0 9em 0;
+}
+.menu .block-menu .block-item:where.row-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .block-menu .block-item .row-1 {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  overflow-x: auto;
+  border-radius: 8px;
+  user-select: none;
+  margin: 0 0 48px 1px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  right: -2em;
+}
+.menu .block-menu .block-item .row-1 .col {
+  background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+  margin: 0 18px;
+  width: 285px;
+  height: 341px;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  list-style: none;
+  cursor: pointer;
+}
+.menu .block-menu .block-item .row-1 .col .item-img {
+  width: 284px;
+  height: 202px;
+}
+.menu .block-menu .block-item .row-1 .col .item-img .goose {
+  opacity: 1;
+  width: 285px;
+  height: 210px;
+  border: 10px;
+}
+.menu .block-menu .block-item .row-1 .col .item-text {
+  display: flex;
+  justify-content: space-between;
+  width: 10.5em;
+  margin: 12px 0 0 15px;
+}
+.menu .block-menu .block-item .row-1 .col .item-text .item-title {
+  font-family: "Gilroy SemiBold", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.6px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.menu .block-menu .block-item .row-1 .col .item-text .item-title .item-describe {
+  font-family: "Gilroy Regular", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  color: #CFCFCF;
+  margin: 10px 0 0 0;
+}
+.menu .block-menu .block-item .row-1 .col .item-text .item-cost {
+  font-family: "Gilroy Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23.86px;
+  text-align: left;
+  margin: 10px 0 0 0;
+}
+.menu .block-menu .block-item .row-1 .col .item-text .mass {
+  font-family: "Gilroy Bold", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13.92px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.row-1.dragging {
+  scroll-behavior: smooth;
+}
+.row-1.dragging .col {
+  cursor: grab;
+  user-select: none;
+}
+
+.row-1.no-transition {
+  scroll-behavior: auto;
 }
