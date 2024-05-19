@@ -1,3 +1,361 @@
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Italic";
+  src: url("../fonts/Gilroy-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy SemiBold";
+  src: url("../fonts/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  /* semi-bold */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zing Rust Demo";
+  src: url("../fonts/ZingRustDemo-Base.otf") format("truetype");
+  font-weight: 400;
+  /* regular */
+  font-style: italic;
+}
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: aliceblue;
+  font-family: "Gilroy Regular", sans-serif;
+  font-size: 22px;
+  background-color: #403C3B;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0rem;
+  padding-left: 0;
+}
+
+hr {
+  width: 1400px;
+}
+
+.header .nav-bar {
+  margin-bottom: 25px;
+  margin-top: 38px;
+}
+.header .nav-bar .logo {
+  font-family: "Gilroy Bold", sans-serif;
+  font-size: 27px;
+  line-height: 25px;
+  font-weight: 700;
+  height: 25px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  top: 7.5px;
+}
+.header .nav-bar .nav {
+  text-align: center;
+  border-radius: 10px;
+}
+.header .nav-bar .nav form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+.header .nav-bar .nav form input, .header .nav-bar .nav form button {
+  outline: none;
+  background: transparent;
+}
+.header .nav-bar .nav form input {
+  width: 380px;
+  position: relative;
+  height: 42px;
+  padding-left: 15px;
+  left: -2.5em;
+  border: none;
+  border-radius: 10px;
+  background-color: #504b4a;
+  color: #ffffff;
+}
+.header .nav-bar .nav form input:focus {
+  border-color: #504b4a;
+}
+.header .nav-bar .nav form button {
+  background-color: #504b4a;
+  width: 20px;
+  border: none;
+  border-radius: 10px;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: -2.2em;
+  cursor: pointer;
+}
+.header .nav-bar .nav form button .magnifier {
+  width: 25px;
+  position: relative;
+  top: -2px;
+}
+.header .nav-bar .contact .row-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.header .nav-bar .contact .row-1 .phone-block {
+  background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+  width: 32px;
+  border-radius: 50%;
+  margin: 8px 20px 0px 0px;
+  position: relative;
+  top: -5px;
+}
+.header .nav-bar .contact .row-1 .phone-block .phone-img {
+  position: relative;
+  top: -1.5px;
+  left: -1px;
+}
+.header .nav-bar .contact .row-1 .us-contact .title-contact {
+  font-family: "Gilroy Regular", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: left;
+}
+.header .nav-bar .contact .row-1 .us-contact .number-contact {
+  font-family: "Gilroy Bold", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.header .nav-bar .bucket-block {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.header .nav-bar .bucket-block .bucket-header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+  width: 149px;
+  height: 52px;
+  border-radius: 10px;
+}
+.header .nav-bar .bucket-block .bucket-header .bucket-text {
+  font-family: "Gilroy SemiBold", sans-serif;
+  font-weight: 600;
+  line-height: 17px;
+  font-size: 17px;
+  margin: 17px 0 0 0;
+  display: inline;
+}
+.header .nav-bar .bucket-block .bucket-header .bucket-text::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 30px;
+  margin-left: 15px;
+  transform: rotate(90deg);
+  right: 6.5em;
+  top: 3.6em;
+}
+.header .nav-bar .bucket-block .bucket-number {
+  font-family: "Gilroy SemiBold", sans-serif;
+  font-weight: 600;
+  line-height: 14px;
+  font-size: 17px;
+  color: black;
+  position: relative;
+  top: 14px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-banner .art-img {
+  width: 1425px;
+}
+
+.menu .header-menu {
+  background-color: #44403F;
+  width: 1425px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FFFFFF1A;
+}
+.menu .header-menu .menu-list {
+  font-weight: 400;
+  font-size: 18px;
+  color: #d1b7b7;
+  display: flex;
+}
+.menu .header-menu .menu-list .menu-title {
+  font-family: "Gilroy Regular", sans-serif;
+  list-style: none;
+  margin: 0 25px;
+  position: relative;
+  top: 7px;
+  line-height: 20.88px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.menu .header-menu .menu-list .menu-title .line {
+  width: 100%;
+  position: relative;
+  opacity: 0;
+  top: 20px;
+  height: 2px;
+  background: #618967;
+  transition: opacity 0.3s ease;
+}
+.menu .header-menu .menu-list .menu-title:active {
+  font-weight: 500;
+  color: #ffffff;
+}
+.menu .header-menu .menu-list .menu-title:active .line {
+  opacity: 1;
+}
+.menu .block-menu {
+  width: 1258px;
+  position: relative;
+  left: 2em;
+}
+.menu .block-menu .block-title {
+  margin: 51px 0 50px 114px;
+}
+.menu .block-menu .block-title .title-text {
+  font-family: "Gilroy SemiBold", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38.69px;
+  text-align: left;
+  width: 11em;
+}
+.menu .block-menu .block-title .line-title {
+  width: 33px;
+  height: 4px;
+  transform: rotate(90deg);
+  background: #618967;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+.menu .block-menu .block-item {
+  margin: 0 0 9em 0;
+}
+.menu .block-menu .block-item:where.row-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .block-menu .block-item .row-1 {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  overflow-x: auto;
+  border-radius: 8px;
+  user-select: none;
+  margin: 0 0 48px 1px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  right: -2em;
+}
+.menu .block-menu .block-item .row-1 .col {
+  background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+  margin: 0 18px;
+  width: 285px;
+  height: 341px;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  list-style: none;
+  cursor: pointer;
+}
+.menu .block-menu .block-item .row-1 .col .item-img {
+  width: 284px;
+  height: 202px;
+}
+.menu .block-menu .block-item .row-1 .col .item-img .goose {
+  opacity: 1;
+  width: 285px;
+  height: 210px;
+  border: 10px;
+}
+.menu .block-menu .block-item .row-1 .col .item-text {
+  display: flex;
+  justify-content: space-between;
+  width: 10.5em;
+  margin: 12px 0 0 15px;
+}
+.menu .block-menu .block-item .row-1 .col .item-text .item-title {
+  font-family: "Gilroy SemiBold", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.6px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.menu .block-menu .block-item .row-1 .col .item-text .item-title .item-describe {
+  font-family: "Gilroy Regular", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  color: #CFCFCF;
+  margin: 10px 0 0 0;
+}
+.menu .block-menu .block-item .row-1 .col .item-text .item-cost {
+  font-family: "Gilroy Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23.86px;
+  text-align: left;
+  margin: 10px 0 0 0;
+}
+.menu .block-menu .block-item .row-1 .col .item-text .mass {
+  font-family: "Gilroy Bold", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13.92px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.row-1.dragging {
+  scroll-behavior: smooth;
+}
+.row-1.dragging .col {
+  cursor: grab;
+  user-select: none;
+}
+
+.row-1.no-transition {
+  scroll-behavior: auto;
 }
